@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da memoria</title>
+    <script defer src="jogo.js"></script>
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/jogo.css">
+    <link rel="stylesheet" href="estilos/cabecalho.css">
+    <link rel="stylesheet" href="estilos/info.css">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav>
+            <ul>
+                <li><a href="/">inicio</a></li>
+                <li class="dropdown">
+                    <a href="/">sobre</a>
+
+                    <div class="dropdown-menu">
+                        <a href="/">opção-1</a>
+                        <a href="/">opção-2</a>
+                        <a href="/">opção-3</a>
+
+                    </div>
+                </li>
+                <li><a href="/">contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main">
+        <div id="info"  class="info">
+            <label>Nome do Jogador:</label>
+            <input id="jodador" placeholder="Digite seu Nome" type="text">
+        </div>
+
+        <div id="jogo">
+            <div class="container">
+                <button onClick='registro(1)' class="btn btn-1">1</button>
+                <button onClick='registro(2)' class="btn btn-2">2</button>
+                <button onClick='registro(3)' class="btn btn-3">3</button>
+                <button onClick='registro(4)' class="btn btn-4">4</button>
+                <button onClick='registro(5)' class="btn btn-5">5</button>
+                <button onClick='registro(6)' class="btn btn-6">6</button>
+                <button onClick='registro(7)' class="btn btn-7">7</button>
+                <button onClick='registro(8)' class="btn btn-8">8</button>
+                <button onClick='registro(9)' class="btn btn-9">9</button>
+            </div>
+            <button id="iniciar" onClick='inicio()'>
+                <!-- https://feathericons.dev/?search=play&iconset=feather -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                    class="main-grid-item-icon" fill="#fff" stroke="#fff" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2">
+                    <polygon points="5 3 19 12 5 21 5 3" />
+                </svg>
+            </button>
+        </div>
+        
+        <div  class="info">
+            <h3>High Score</h3>
+            <p>place name Score</p>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

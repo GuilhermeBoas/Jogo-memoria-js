@@ -1,0 +1,28 @@
+.cabecalho{
+    background-color: #0579E6;
+    
+    
+}
+
+.cabecalho ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    
+}
+.dropdown-menu a{
+    display: block;
+}
+
+.dropdown-menu a:hover{
+    background-color: red;
+
+}
+.dropdown-menu {
+    position: absolute;
+    display: none   ;
+    
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}

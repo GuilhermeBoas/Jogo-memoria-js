@@ -1,0 +1,63 @@
+:root{
+    --cor-de-fundo: #0579E6;
+    --cor-do-btn: #05C0E6;
+    --cor-selecionado: #1f96ad;
+  }
+/* JOGO */
+
+#jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em ;
+}
+
+.container{
+    background-color: var(--cor-de-fundo);
+    width: 30vw;
+    
+    height: 60vh;  
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    padding: 2em;
+    gap: 1em;
+    margin: 1em;
+    border-radius: 2em;
+
+    /*alterara o media query depois para dficar respondivo  1100px  e 450px */ 
+}
+
+.btn{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background-color: var(--cor-do-btn);
+    color: var(--cor-do-btn);
+    border-radius: 10%;
+    
+}
+
+.btn:hover{
+    border-color: red;
+}
+
+.pressionado{
+   background-color: var(--cor-selecionado); 
+   color: var(--cor-selecionado);
+}
+
+/* CONTROLES INICIAR E REINICIAR */
+
+#iniciar{
+    padding: 1em 2.5em;
+    display: block;
+    gap: 6em;
+    background-color: #f16060;
+    border: none;
+    border-radius: 1em;
+    text-align: center;
+}
+
+/* estilização de cada botão */
+

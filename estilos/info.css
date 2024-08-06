@@ -1,0 +1,7 @@
+.info{
+    background-color: #272c31;
+    color: #0579E6;   
+}
+#info label{
+    display: block;
+}
