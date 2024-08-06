@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da memoria</title>
     <script defer src="jogo.js"></script>
+    <script defer src="placar.js"></script>
     <link rel="stylesheet" href="estilos/reset.css">
     <link rel="stylesheet" href="estilos/jogo.css">
     <link rel="stylesheet" href="estilos/cabecalho.css">
@@ -62,8 +63,17 @@
         </div>
         
         <div  class="info">
-            <h3>High Score</h3>
-            <p>place name Score</p>
+            <table >
+                <tbody id="score">
+                    <tr>
+                        <td></td>
+                        <td>Name</td>
+                        <td>Score</td>
+                    </tr>
+                    
+                </tbody>
+
+            </table>
         </div>
     </section>
 
