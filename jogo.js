@@ -15,11 +15,17 @@ const mudarCor = (botao) => {
     setTimeout(() => botao.classList.remove('pressionado'), 350);
 }
 
+const tocarAudio = (num)=>{
+    notaMusical = document.querySelector(`#audio-${num}`)
+    notaMusical.play()
+}
+
 let cont = 0
 let vitorias = 0
 const registro = (num) => {
     let btn = document.querySelector(`.btn-${num}`)
     mudarCor(btn)
+    tocarAudio(num)
     playerSequencia.push(parseInt(btn.textContent))
 
     if (playerSequencia[cont] == roboSequencia[cont]) {
@@ -64,7 +70,7 @@ const leitorRobo = () => {
         setTimeout(()=>{
             let btn = document.querySelector(`.btn-${item}`);
             mudarCor(btn);
+            tocarAudio(item)
         }, index*500);        
     });
 }
-// local store
